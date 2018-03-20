@@ -10,7 +10,7 @@ describe("Plane", function() {
   describe('Plane status', function() {
 
     it("Has an automatic status of air", function() {
-      expect(plane.status).toEqual('air');
+      expect(plane._status).toEqual('air');
     });
 
   });
@@ -19,7 +19,7 @@ describe("Plane", function() {
 
     it("lands itself and sets status to the airport", function() {
       plane.land(airport);
-      expect(plane.status).toEqual(airport);
+      expect(plane._status).toEqual(airport);
     });
 
   });
@@ -29,7 +29,7 @@ describe("Plane", function() {
     it("takes off and sets status to air", function() {
       plane.land(airport);
       plane.takeOff();
-      expect(plane.status).toEqual('air');
+      expect(plane._status).toEqual('air');
     });
 
   });

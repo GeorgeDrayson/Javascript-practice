@@ -1,11 +1,11 @@
 function Plane() {
-  this.status = 'air'
+  this._status = 'air'
 }
 
 Plane.prototype.land = function(airport) {
-  this.status = airport
+  this._status = airport
 }
 
 Plane.prototype.takeOff = function() {
-  this.status = 'air'
+  this._status = 'air'
 }
