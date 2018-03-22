@@ -27,3 +27,9 @@ FizzBuzz.prototype._isDivisibleBy5 = function(number) {
 FizzBuzz.prototype._isDivisibleBy3 = function(number) {
   return this._isDivisibleBy(3, number);
 }
+
+var fizzBuzz = new FizzBuzz();
+
+for (var i = 1; i <= 100; i++) {
+  console.log(fizzBuzz.play(i));
+}
